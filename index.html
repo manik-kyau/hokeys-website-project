@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---Font Awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- Google font Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!--  Tailwind CSS & Daisy UI link-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#131318',
+                'secondary-color': '#FF4240',
+                'description-color': '#13131899',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+      </style>
+</head>
+<body class="font-manrope px-5">
+    <header class="max-w-[1180px] mx-auto">
+        <!-- Navbar  Section -->
+        <nav class="my-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3  p-2 shadow bg-base-100 rounded-lg w-52"> 
+                      <li><a class="text-base font-normal text-secondary-color">Home</a></li>
+                      <li><a class="text-base font-normal text-[#424247]">About</a></li>
+                      <li><a class="text-base font-normal text-[#424247]">Pages</a></li>
+                      <li><a class="text-base font-normal text-[#424247]">blog</a></li>
+                      <li><a class="text-base font-normal text-[#424247]">Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-4xl font-extrabold text-primary-color">Hockey<span class="text-secondary-color">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-base font-normal text-secondary-color">Home</a></li>
+                      <li><a class="text-base font-normal text-[#424247]">About</a></li>
+                      <li><a class="text-base font-normal text-[#424247]">Pages</a></li>
+                      <li><a class="text-base font-normal text-[#424247]">blog</a></li>
+                      <li><a class="text-base font-normal text-[#424247]">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-6">
+                    <img class="text-base font-normal hidden lg:block " src="Images/search.png" alt="">
+                  <a class="btn bg-secondary-color hover:text-secondary border-none text-white text-xl font-bold">Button</a>
+                </div>
+              </div>
+        </nav>
+        <!--  Banner Section -->
+        <div class="">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <div class="">
+                    <img src="Images/banner.png" class="h-[250px] lg:h-full w-full"/>
+                  </div>
+                  <div class="absolute flex gap-8 -translate-x-1/2 lg:translate-x-0 left-1/2 lg:left-8 bottom-8">
+                    <a href="#slide2" class="btn btn-circle border-none hover:text-black bg-black text-white">❮</a> 
+                    <a href="#slide1" class="btn btn-circle border-none hover:text-black bg-black text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute flex gap-8 -translate-x-1/2 lg:translate-x-0 left-1/2 lg:left-8 bottom-8">
+                    <a href="#slide1" class="btn btn-circle border-none hover:text-black bg-black text-white">❮</a> 
+                    <a href="#slide1" class="btn btn-circle border-none hover:text-black bg-black text-white">❯</a>
+                   </div>
+                 </div> 
+              </div>
+              <div class="lg:absolute lg:-bottom-12 lg:right-32 p-4 lg:p-8 bg-primary-color space-y-3 rounded-xl w-full lg:w-[600px] mt-4">
+                <h1 class="text-xl lg:text-2xl font-extrabold text-white">Meet all the heroes from the field</h1>
+                <p class="text-sm lg:text-base font-medium text-[#ffffff99]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-[1180px] mx-auto ">
+        <!-- Hokey club section -->
+        <section class="mt-10 lg:mt-24">
+            <div class="mb-6 lg:mb-12 py-6 lg:py-8 border-dashed border-t-2 border-b-2 text-center space-y-3 lg:space-y-6">
+                <h1 class="text-2xl lg:text-4xl font-extrabold text-primary-color">Professional Hockeys Club</h1>
+                <p class="w-full lg:w-2/3 text-sm lg:text-base font-medium text-description-color mx-auto">a game played on a sports field between two teams of eleven players who each have a curved stick with which they try to put a small, hard ball into the other </p>
+            </div>
+            <!-- Grid Hokey Club -->
+
+        </section>
+        <!-- Program Sections -->
+        <div class="mb-6 lg:mb-12 py-6 lg:py-8 border-dashed border-t-2 border-b-2 text-center space-y-3 lg:space-y-6">
+            <h1 class="text-2xl lg:text-4xl font-extrabold text-primary-color">Program Sections</h1>
+            <p class="w-full lg:w-2/3 text-sm lg:text-base font-medium text-description-color mx-auto">If by "program sections" you are referring to different components or aspects within a hockey club's organizational structure or activities, here's a possible breakdown:</p>
+        </div>
+    </main>
+    <footer class="">
+       
+    </footer>
+</body>
+</html>
